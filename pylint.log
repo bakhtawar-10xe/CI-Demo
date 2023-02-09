@@ -1,0 +1,6 @@
+************* Module hello
+hello.py:18:16: C0303: Trailing whitespace (trailing-whitespace)
+
+------------------------------------------------------------------
+Your code has been rated at 8.75/10 (previous run: 8.75/10, +0.00)
+
