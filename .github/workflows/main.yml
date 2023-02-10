@@ -13,4 +13,4 @@ jobs:
     - name: Get changed files
       run: |
         git status
-        git diff --revisions=origin/main..HEAD --paths=*.py
+        git diff origin/main
