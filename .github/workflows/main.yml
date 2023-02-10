@@ -13,4 +13,3 @@ jobs:
     - name: Get changed files
       run: |
         git branch
-        git diff 
