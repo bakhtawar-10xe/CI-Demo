@@ -14,23 +14,3 @@ jobs:
       run: |
         git status
         git diff-tree --name-only --no-commit-id HEAD
-
-
-on:
-  pull_request:
-    types: [opened, synchronize]
-
-jobs:
-  lintonPR:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Install dependencies
-      run: |
-        pip install pylint
-    - name: Run Linter
-      run: |
-        pylint *.py
-
-  
