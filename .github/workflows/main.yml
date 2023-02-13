@@ -10,6 +10,11 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Install Dependencies
+      uses: |
+        pip install pylint
+
     - name: Fetch Main
       run: |
         git fetch origin main
