@@ -12,7 +12,7 @@ def add(n_1, n_2):
 
 print("hello world")
 X = 20
-Y = 10 
+Y = 10
 Z = 3 + 3 + X * Y
 print(X)
 print(add(X, Z))
