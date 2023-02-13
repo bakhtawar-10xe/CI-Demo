@@ -12,14 +12,14 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install Dependencies
-      uses: |
+      run: |
         pip install pylint
 
     - name: Fetch Main
       run: |
         git fetch origin main
         git diff --name-only origin/main..HEAD 
-        
+
     - name: Run pylint on changed files
       run: |
         changed_files=$(git diff --name-only origin/main..HEAD | grep ".py$")
