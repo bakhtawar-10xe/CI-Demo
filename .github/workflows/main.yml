@@ -22,11 +22,4 @@ jobs:
 
     - name: Run pylint on changed files
       run: |
-        changed_files=$(git diff --name-only origin/main..HEAD | grep ".py$")
-        if [ "$changed_files" ]; then
-          echo "Running pylint on changed files:"
-          echo "$changed_files"
-          echo "$changed_files" | xargs pylint
-        else
-          echo "No Python files have been changed."
-        fi
+        pylint .
